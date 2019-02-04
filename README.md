@@ -1,6 +1,8 @@
 # .vimrc
 My default .vimrc profile
 
-Add these directories:
+1. Add these directories:
 ```
 mkdir ~/.vimrc/backup/ && mkdir ~/.vimrc/swap/ && mkdir ~/.vimrc/undo/
+```
+2. Go to system settings -> keyboard -> key repeat (fast) && delay unit repeat (short) to make the navigation much more faster in VIM.
