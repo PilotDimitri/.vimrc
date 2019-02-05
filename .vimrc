@@ -78,7 +78,7 @@ set hlsearch
 "This unsets the "last search pattern" register by hitting return
 nnoremap <CR> :noh<CR><CR>
 
-" Explorer stuff
+" This makes the explorer visible when you open a file with vim
 let g:netrw_banner = 0
 let g:netrw_winsize=15
 augroup ProjectDrawer
