@@ -13,8 +13,8 @@ set autoindent
 set smartindent
 map ,l :w!<CR>:!node %<CR>
 set splitbelow
-" uncomment if you need mouse support in the terminal
-" set mouse=a
+" uncomment if you need mouse support
+"set mouse=a
 
 " shows incomplete commands
 set showcmd
@@ -74,3 +74,10 @@ augroup END
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
 set undodir=~/.vim/undo//
+
+"provides tab-completion for all file-related tasks
+set path+=**
+
+" automatic resizing
+set winheight=30
+set winminheight=30
