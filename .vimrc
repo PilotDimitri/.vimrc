@@ -88,3 +88,6 @@ augroup END
 
 " Set current file to the working directory
 set autochdir
+
+" Switching between buffers
+nnoremap ls :ls<CR>:b<Space>
