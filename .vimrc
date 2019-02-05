@@ -13,7 +13,8 @@ set autoindent
 set smartindent
 map ,l :w!<CR>:!node %<CR>
 set splitbelow
-set mouse=a
+" uncomment if you need mouse support in the terminal
+" set mouse=a
 
 " shows incomplete commands
 set showcmd
