@@ -59,16 +59,6 @@ set omnifunc=syntaxcomplete#Complete
 
 " autocomplete for the file path in insert mode
 inoremap ,a <C-X><C-F>
-" https://shapeshed.com/vim-netrw/
-let g:netrw_banner = 0
-let g:netrw_liststyle = 3
-let g:netrw_browse_split = 4
-let g:netrw_altv = 1
-let g:netrw_winsize = 10 
-augroup ProjectDrawer
-  autocmd!
-  autocmd VimEnter * :Vexplore
-augroup END
 
 " backup to ~/.tmp
 set backupdir=~/.vim/backup//
@@ -79,5 +69,22 @@ set undodir=~/.vim/undo//
 set path+=**
 
 " automatic resizing
-set winheight=30
-set winminheight=30
+" set winheight=30
+" set winminheight=30
+
+" highlight search
+set hlsearch
+
+"This unsets the "last search pattern" register by hitting return
+nnoremap <CR> :noh<CR><CR>
+
+" Explorer stuff
+let g:netrw_banner = 0
+let g:netrw_winsize=15
+augroup ProjectDrawer
+  autocmd!
+  autocmd VimEnter * :Lexplore!
+augroup END
+
+" Set current file to the working directory
+set autochdir
