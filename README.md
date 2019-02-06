@@ -1,5 +1,5 @@
 # .vimrc
-My default .vimrc profile
+My minimalistic vim setup.
 
 1. Add these directories:
 ```
@@ -9,6 +9,6 @@ mkdir ~/.vim/backup/ && mkdir ~/.vim/swap/ && mkdir ~/.vim/undo/
 
 Note: You can try this out too: `defaults write NSGlobalDomain KeyRepeat -int 0`
 
-3. Install plugins (from folder [plugin](./plugin):
+3. Install plugins (from folder [plugin](./plugin)):
   - put the files under `~/.vim/plugin`
   - run `:source ~/.vim/plugin/plugin-name.vim` e.g. `:source ~/.vim/plugin/buftabs.vim`
