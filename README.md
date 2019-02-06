@@ -10,5 +10,5 @@ mkdir ~/.vim/backup/ && mkdir ~/.vim/swap/ && mkdir ~/.vim/undo/
 Note: You can try this out too: `defaults write NSGlobalDomain KeyRepeat -int 0`
 
 3. Install plugins:
-  - put the files under ~/.vim/plugin
+  - put the files under `~/.vim/plugin`
   - run `:source ~/.vim/plugin/plugin-name.vim` e.g. `:source ~/.vim/plugin/buftabs.vim`
