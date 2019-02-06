@@ -1,4 +1,3 @@
-filetype plugin indent on
 syntax on
 
 " autocomplete 
@@ -19,8 +18,6 @@ set autoindent
 set smartindent
 map ,l :w!<CR>:!node %<CR>
 set splitbelow
-" uncomment if you need mouse support
-"set mouse=a
 
 " shows incomplete commands
 set showcmd
