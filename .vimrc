@@ -1,5 +1,11 @@
 filetype plugin indent on
 syntax on
+
+" autocomplete 
+set omnifunc=syntaxcomplete#Complete
+let g:tern_map_keys=1
+let g:tern_show_argument_hints="on_hold"
+
 map <up> <nop>
 map <down> <nop>
 map <left> <nop>
@@ -91,3 +97,8 @@ set autochdir
 
 " Switching between buffers
 nnoremap ls :ls<CR>:b<Space>
+nnoremap bn :bn<CR>
+nnoremap bp :bp<CR>
+
+" When starting vim put cursor to another buffer
+au VimEnter * wincmd h
