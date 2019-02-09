@@ -18,5 +18,6 @@ Note: You can try this out too: `defaults write NSGlobalDomain KeyRepeat -int 0`
 1. Install https://github.com/jarun/nnn - run `brew install nnn`
 2. Run `nnn` or `n` in bash
 3. If you want to open a file in vim run type `e`
-4. If you want to exit in a current directory type `^G
+4. If you want to exit in a current directory type `^g
 5. If you want to exit press `q
+6. If you want to delete a file press `^x`
