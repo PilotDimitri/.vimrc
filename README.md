@@ -38,7 +38,10 @@ Note: You can try this out too: `defaults write NSGlobalDomain KeyRepeat -int 0`
 {
     "plugins": {
         "es_modules": {},
-        "node": {}
+        "node": {},
+        "modules": {},
+        "requirejs": {},
+        "commonjs": {}
     },
     "libs": [
         "ecma5",
