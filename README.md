@@ -24,7 +24,7 @@ Note: You can try this out too: `defaults write NSGlobalDomain KeyRepeat -int 0`
 
 ## Faster Bash Navigation with z
 
-1. Run `git clone https://github.com/rupa/z.git ~/z
+1. Run `git clone https://github.com/rupa/z.git ~/z`
 2. Add `. ~/z/z.sh`to your .bashrc file
 3. Run `source ~/.bashrc`
 4. Browse around to build up the database
