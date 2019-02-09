@@ -29,3 +29,24 @@ Note: You can try this out too: `defaults write NSGlobalDomain KeyRepeat -int 0`
 3. Run `source ~/.bashrc`
 4. Browse around to build up the database
 5. Press `z` or press `z folder` 
+
+## Autocompletion with Tern.js
+1. Install 
+2. create `~/.tern-config` file in the project directory
+
+```js
+{
+    "plugins": {
+        "es_modules": {},
+        "node": {}
+    },
+    "libs": [
+        "ecma5",
+        "ecma6",
+        "ecma7",
+        "ecma8",
+        "ecma9",
+    ],
+    "ecmaVersion": 9
+}
+```
