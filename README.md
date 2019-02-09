@@ -16,6 +16,6 @@ Note: You can try this out too: `defaults write NSGlobalDomain KeyRepeat -int 0`
 ## Bash Terminal Manager
 
 1. Install https://github.com/jarun/nnn - run `brew install nnn`
-2. Run `nnn` in bash
+2. Run `nnn` or `n` in bash
 3. If you want to open a file in vim run type `e`
 4. If you want to exit in a current directory type `^G
