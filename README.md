@@ -1,5 +1,5 @@
 # .vimrc
-My minimalistic vim setup.
+## Minimalistic Vim Setup
 
 1. Add these directories:
 ```
