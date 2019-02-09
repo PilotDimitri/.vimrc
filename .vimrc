@@ -1,9 +1,14 @@
 syntax on
-
 " autocomplete 
 set omnifunc=syntaxcomplete#Complete
 let g:tern_map_keys=1
 let g:tern_show_argument_hints="on_hold"
+
+" Just to save the content of the file
+map <Space> :w!<CR>
+
+" q should be mapped to qall
+cmap q qall
 
 map <up> <nop>
 map <down> <nop>
@@ -63,6 +68,9 @@ set omnifunc=syntaxcomplete#Complete
 " autocomplete for the file path in insert mode
 inoremap ,a <C-X><C-F>
 
+" autocomplete tern.js 
+inoremap ,l <C-X><C-O>
+
 " backup to ~/.tmp
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
@@ -90,12 +98,14 @@ augroup ProjectDrawer
 augroup END
 
 " Set current file to the working directory
-set autochdir
+"set autochdir
 
 " Switching between buffers
-nnoremap ls :ls<CR>:b<Space>
-nnoremap bn :bn<CR>
-nnoremap bp :bp<CR>
+nnoremap sh :ls<CR>:b<Space>
+nnoremap sw :bn<CR>
 
 " When starting vim put cursor to another buffer
 au VimEnter * wincmd h
+
+execute pathogen#infect()
+call pathogen#helptags()
