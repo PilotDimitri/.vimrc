@@ -31,7 +31,7 @@ Note: You can try this out too: `defaults write NSGlobalDomain KeyRepeat -int 0`
 5. Press `z` or press `z folder` 
 
 ## Autocompletion with Tern.js
-1. Install 
+1. Install https://github.com/ternjs/tern_for_vim
 2. create `~/.tern-config` file in the project directory
 
 ```js
