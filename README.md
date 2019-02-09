@@ -48,7 +48,7 @@ Note: You can try this out too: `defaults write NSGlobalDomain KeyRepeat -int 0`
         "ecma6",
         "ecma7",
         "ecma8",
-        "ecma9",
+        "ecma9"
     ],
     "ecmaVersion": 9
 }
