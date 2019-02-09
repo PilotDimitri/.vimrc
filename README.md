@@ -22,7 +22,7 @@ Note: You can try this out too: `defaults write NSGlobalDomain KeyRepeat -int 0`
 5. If you want to exit press `q
 6. If you want to delete a file press `^x`
 
-## Faster Navigation with z
+## Faster Bash Navigation with z
 
 1. Run `git clone https://github.com/rupa/z.git ~/z
 2. Add `. ~/z/z.sh`to your .bashrc file
