@@ -66,10 +66,10 @@ filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 
 " autocomplete for the file path in insert mode
-inoremap ,a <C-X><C-F>
+" inoremap ,a <C-X><C-F>
 
 " autocomplete tern.js 
-inoremap ,l <C-X><C-O>
+" inoremap ,l <C-X><C-O>
 
 " backup to ~/.tmp
 set backupdir=~/.vim/backup//
