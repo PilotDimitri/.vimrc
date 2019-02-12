@@ -54,3 +54,8 @@ Note: You can try this out too: `defaults write NSGlobalDomain KeyRepeat -int 0`
     "ecmaVersion": 9
 }
 ```
+## Bash Tree View
+1. Put `.bash/find.sh`into `~/.bash/find.sh`
+2. Make it executable `chmod +x find.sh`
+3. Add `alias lst='~/.bash/find.sh'` to your `.bash_profile`
+4. Run `lst` to see the tree view.
