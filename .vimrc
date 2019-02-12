@@ -7,9 +7,6 @@ let g:tern_show_argument_hints="on_hold"
 " Just to save the content of the file
 map <Space> :w!<CR>
 
-" q should be mapped to qall
-cmap q qall
-
 map <up> <nop>
 map <down> <nop>
 map <left> <nop>
@@ -18,7 +15,6 @@ imap <delete> <nop>
 set vb
 set t_vb=
 set number
-map ,w <C-w><C-w>
 set autoindent
 set smartindent
 map ,l :w!<CR>:!node %<CR>
@@ -46,7 +42,7 @@ set bg=light
 
 " shows constantly in which file you are working
 set laststatus=2
-set statusline+=%F
+set statusline+=%F\ \%{Percent()}%%
 set title
 
 " you can change buffers without forcing it with shebang
@@ -92,6 +88,7 @@ nnoremap <CR> :noh<CR><CR>
 " This makes the explorer visible when you open a file with vim
 let g:netrw_banner = 0
 let g:netrw_winsize=15
+let g:netrw_liststyle=3
 augroup ProjectDrawer
   autocmd!
   autocmd VimEnter * :Lexplore!
@@ -109,3 +106,11 @@ au VimEnter * wincmd h
 
 execute pathogen#infect()
 call pathogen#helptags()
+
+" shows the percentage of the file left
+function! Percent()
+  let byte = line2byte( line( "." ) ) + col( "." ) - 1
+  let size = (line2byte( line( "$" ) + 1 ) - 1)
+  " return byte . " " . size . " " . (byte * 100) / size
+  return (byte * 100) / size
+endfunction
