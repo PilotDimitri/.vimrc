@@ -20,6 +20,10 @@ set smartindent
 map ,l :w!<CR>:!node %<CR>
 set splitbelow
 
+
+" always be in the current directory of the file
+set autochdir
+
 " shows incomplete commands
 set showcmd
 
@@ -62,7 +66,7 @@ filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 
 " autocomplete for the file path in insert mode
-" inoremap ,a <C-X><C-F>
+inoremap <C-a> <C-X><C-F>
 
 " autocomplete tern.js 
 " inoremap ,l <C-X><C-O>
@@ -103,9 +107,6 @@ nnoremap sw :bn<CR>
 
 " When starting vim put cursor to another buffer
 au VimEnter * wincmd h
-
-execute pathogen#infect()
-call pathogen#helptags()
 
 " shows the percentage of the file left
 function! Percent()
