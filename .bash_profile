@@ -5,6 +5,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export AWS_PROFILE=default
 
+alias lst='~/.bash/find.sh'
 alias system='open "x-apple.systempreferences:"'
 alias apps='open /Applications/'
 alias chrome='open -a "Google Chrome"'
@@ -23,4 +24,5 @@ alias text='open -a "TextEdit"'
 alias downloads='open ~/Downloads'
 alias c='clear'
 alias desktop='open ~/Desktop'
-
+alias last='ls -tU | head -n5'
+alias messages='open -a "Messages"'
