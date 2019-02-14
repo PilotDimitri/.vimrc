@@ -71,6 +71,9 @@ inoremap <C-a> <C-X><C-F>
 " autocomplete tern.js 
 " inoremap ,l <C-X><C-O>
 
+" switch back to the previous window
+map <C-b> <C-w><C-p>
+
 " backup to ~/.tmp
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
@@ -79,9 +82,6 @@ set undodir=~/.vim/undo//
 "provides tab-completion for all file-related tasks
 set path+=**
 
-" automatic resizing
-" set winheight=30
-" set winminheight=30
 
 " highlight search
 set hlsearch
@@ -92,7 +92,7 @@ nnoremap <CR> :noh<CR><CR>
 " This makes the explorer visible when you open a file with vim
 let g:netrw_banner = 0
 let g:netrw_winsize=15
-let g:netrw_liststyle=3
+
 augroup ProjectDrawer
   autocmd!
   autocmd VimEnter * :Lexplore!
@@ -115,3 +115,10 @@ function! Percent()
   " return byte . " " . size . " " . (byte * 100) / size
   return (byte * 100) / size
 endfunction
+
+" activate pathogen plugin
+execute pathogen#infect()
+
+" deleting the netrwlisting files
+autocmd FileType netrw setl bufhidden=delete
+
