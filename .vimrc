@@ -1,11 +1,11 @@
 syntax on
 " autocomplete 
-set omnifunc=syntaxcomplete#Complete
+set omnifunc=syntaxcomplete#complete
 let g:tern_map_keys=1
 let g:tern_show_argument_hints="on_hold"
 
-" Just to save the content of the file
-map <Space> :w!<CR>
+" just to save the content of the file
+map <space> :w!<cr>
 
 map <up> <nop>
 map <down> <nop>
@@ -17,7 +17,7 @@ set t_vb=
 set number
 set autoindent
 set smartindent
-map ,l :w!<CR>:!node %<CR>
+map ,l :w!<cr>:!node %<cr>
 set splitbelow
 
 
@@ -30,7 +30,7 @@ set showcmd
 " shows a menu when using tab completion
 set wildmenu
 
-" if you use z<CR> shows 5 lines of context above
+" if you use z<cr> shows 5 lines of context above
 set scrolloff=5
 
 " set highlight when you perform a search
@@ -46,7 +46,7 @@ set bg=light
 
 " shows constantly in which file you are working
 set laststatus=2
-set statusline+=%F\ \%{Percent()}%%
+set statusline+=%f\ \%{percent()}%%
 set title
 
 " you can change buffers without forcing it with shebang
@@ -63,16 +63,16 @@ set expandtab
 
 " autocompletion
 filetype plugin on
-set omnifunc=syntaxcomplete#Complete
+set omnifunc=syntaxcomplete#complete
 
 " autocomplete for the file path in insert mode
-inoremap <C-a> <C-X><C-F>
+inoremap <c-a> <c-x><c-f>
 
 " autocomplete tern.js 
-" inoremap ,l <C-X><C-O>
+" inoremap ,l <c-x><c-o>
 
 " switch back to the previous window
-map <C-b> <C-w><C-p>
+map <c-b> <c-w><c-p>
 
 " backup to ~/.tmp
 set backupdir=~/.vim/backup//
@@ -86,16 +86,18 @@ set path+=**
 " highlight search
 set hlsearch
 
-"This unsets the "last search pattern" register by hitting return
-nnoremap <CR> :noh<CR><CR>
+"this unsets the "last search pattern" register by hitting return
+nnoremap <cr> :noh<cr><cr>
 
-" This makes the explorer visible when you open a file with vim
+" this makes the explorer visible when you open a file with vim
 let g:netrw_banner = 0
 let g:netrw_winsize=15
+let g:netrw_liststyle=3
+let g:netrw_browse_split = 4 
 
-augroup ProjectDrawer
+augroup projectdrawer
   autocmd!
-  autocmd VimEnter * :Lexplore!
+  autocmd vimenter * :lexplore!
 augroup END
 
 " Set current file to the working directory
@@ -121,4 +123,3 @@ execute pathogen#infect()
 
 " deleting the netrwlisting files
 autocmd FileType netrw setl bufhidden=delete
-
