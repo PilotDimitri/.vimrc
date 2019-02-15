@@ -1,11 +1,11 @@
 syntax on
 " autocomplete 
-set omnifunc=syntaxcomplete#complete
+set omnifunc=syntaxcomplete#Complete
 let g:tern_map_keys=1
 let g:tern_show_argument_hints="on_hold"
 
-" just to save the content of the file
-map <space> :w!<cr>
+" Just to save the content of the file
+map <Space> :w!<CR>
 
 map <up> <nop>
 map <down> <nop>
@@ -17,7 +17,7 @@ set t_vb=
 set number
 set autoindent
 set smartindent
-map ,l :w!<cr>:!node %<cr>
+map ,l :w!<CR>:!node %<CR>
 set splitbelow
 
 
@@ -30,7 +30,7 @@ set showcmd
 " shows a menu when using tab completion
 set wildmenu
 
-" if you use z<cr> shows 5 lines of context above
+" if you use z<CR> shows 5 lines of context above
 set scrolloff=5
 
 " set highlight when you perform a search
@@ -46,7 +46,7 @@ set bg=light
 
 " shows constantly in which file you are working
 set laststatus=2
-set statusline+=%f\ \%{percent()}%%
+set statusline+=%F\ \%{Percent()}%%
 set title
 
 " you can change buffers without forcing it with shebang
@@ -63,16 +63,16 @@ set expandtab
 
 " autocompletion
 filetype plugin on
-set omnifunc=syntaxcomplete#complete
+set omnifunc=syntaxcomplete#Complete
 
 " autocomplete for the file path in insert mode
-inoremap <c-a> <c-x><c-f>
+inoremap <C-a> <C-X><C-F>
 
 " autocomplete tern.js 
-" inoremap ,l <c-x><c-o>
+" inoremap ,l <C-X><C-O>
 
 " switch back to the previous window
-map <c-b> <c-w><c-p>
+map <C-b> <C-w><C-p>
 
 " backup to ~/.tmp
 set backupdir=~/.vim/backup//
@@ -86,18 +86,18 @@ set path+=**
 " highlight search
 set hlsearch
 
-"this unsets the "last search pattern" register by hitting return
-nnoremap <cr> :noh<cr><cr>
+"This unsets the "last search pattern" register by hitting return
+nnoremap <CR> :noh<CR><CR>
 
-" this makes the explorer visible when you open a file with vim
+" This makes the explorer visible when you open a file with vim
 let g:netrw_banner = 0
 let g:netrw_winsize=15
+let g:netrw_browse_split=4
 let g:netrw_liststyle=3
-let g:netrw_browse_split = 4 
 
-augroup projectdrawer
+augroup ProjectDrawer
   autocmd!
-  autocmd vimenter * :lexplore!
+  autocmd VimEnter * :Lexplore!
 augroup END
 
 " Set current file to the working directory
